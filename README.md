@@ -1,11 +1,11 @@
-# Telco Customer Churn Prediction — End-to-End ML Pipeline
+# Telco Customer Churn Prediction - End-to-End ML Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat&logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.6-orange?style=flat&logo=scikit-learn)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
 
-> **DevelopersHub Corporation — AI/ML Engineering Internship | Task 2**
+> **DevelopersHub Corporation - AI/ML Engineering Internship**
 
 A production-ready, reusable machine learning pipeline for predicting customer churn in the telecommunications industry. Built using the Scikit-learn Pipeline API with full preprocessing, model training, hyperparameter tuning, and joblib export.
 
@@ -13,7 +13,7 @@ A production-ready, reusable machine learning pipeline for predicting customer c
 
 ## Overview
 
-Customer churn is one of the most critical challenges in the telecommunications industry. Retaining an existing customer costs significantly less than acquiring a new one. This project builds a clean, modular ML pipeline that predicts whether a customer will leave the service — enabling proactive retention strategies.
+Customer churn is one of the most critical challenges in the telecommunications industry. Retaining an existing customer costs significantly less than acquiring a new one. This project builds a clean, modular ML pipeline that predicts whether a customer will leave the service - enabling proactive retention strategies.
 
 The pipeline encapsulates the entire ML workflow as a single exportable object: from raw data ingestion to a deployable prediction artifact.
 
@@ -21,13 +21,13 @@ The pipeline encapsulates the entire ML workflow as a single exportable object: 
 
 ## Features
 
-- Full scikit-learn `Pipeline` API implementation — preprocessing and modeling in one object
+- Full scikit-learn `Pipeline` API implementation - preprocessing and modeling in one object
 - Separate sub-pipelines for numerical (impute + scale) and categorical (impute + one-hot encode) features via `ColumnTransformer`
 - Two classifiers: **Logistic Regression** and **Random Forest**
 - Hyperparameter tuning with **GridSearchCV** and **StratifiedKFold** cross-validation
 - Evaluation with **Accuracy**, **F1 Score**, and **ROC-AUC**
 - Visualizations: class distribution, confusion matrix, ROC curves, feature importance
-- Pipeline export with **joblib** — load and predict without retraining
+- Pipeline export with **joblib** - load and predict without retraining
 - Prevents data leakage by fitting transformers only on training data
 
 ---
@@ -49,7 +49,7 @@ The pipeline encapsulates the entire ML workflow as a single exportable object: 
 
 ```
 telco-churn-ml-pipeline/
-├── telco_churn_pipeline.ipynb     # Main notebook — full pipeline
+├── telco_churn_pipeline.ipynb     # Main notebook - full pipeline
 ├── churn_pipeline.pkl             # Exported pipeline (generated after running)
 ├── requirements.txt               # Dependencies
 ├── README.md
@@ -64,7 +64,7 @@ telco-churn-ml-pipeline/
 
 ## Dataset
 
-**Telco Customer Churn** dataset by IBM — available on Kaggle:
+**Telco Customer Churn** dataset by IBM - available on Kaggle:
 [https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 Download `WA_Fn-UseC_-Telco-Customer-Churn.csv` and place it in the project root before running the notebook.
@@ -95,7 +95,7 @@ jupyter notebook telco_churn_pipeline.ipynb
 
 ---
 
-## Usage — Load the Exported Pipeline
+## Usage - Load the Exported Pipeline
 
 After running the notebook, the trained pipeline is saved as `churn_pipeline.pkl`. Load it anywhere:
 
@@ -157,8 +157,9 @@ print(f'Churn Probability: {probability[0]:.2%}')
 
 ## Author
 
-**Rabiya Malik**
-BS Software Engineering — Lahore Garrison University
+**Rabiya Malik** - 
+BS Software Engineering
+
 AI/ML Engineering Intern @ DevelopersHub Corporation
 
 [![GitHub](https://img.shields.io/badge/GitHub-RabiyaMalik242-black?style=flat&logo=github)](https://github.com/RabiyaMalik242)
